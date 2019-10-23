@@ -9,9 +9,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/getdate', (req, res) => {
+	var obj ={};
+	oby.date = new Date();
   res
     .status(200)
-    .send(new Date())
+    .send(obj)
     .end();
 });
 
